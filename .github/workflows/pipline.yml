@@ -3,7 +3,8 @@ name: Deployment pipeline
 on:
   workflow_dispatch:
   push:
-    branches: -master
+    branches:
+      - master
 
 jobs:
   simple_deployment_pipeline:
