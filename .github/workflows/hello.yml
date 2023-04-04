@@ -4,25 +4,25 @@ on:
   push:
     branches:
       - master
+      # note that your "main" branch might be called main instead of master
 
 jobs:
   hello_world_job:
     runs-on: ubuntu-20.04
     steps:
       - name: Say hello
-      run: |
-        echo "Hello World!"
+        run: |
+          echo "Hello World!"
   
   log_now:
     runs-on: ubuntu-20.04
     steps:
       - name: log now
-      run: |
-        date -r
-
-  log_ls
+        run: |
+          echo "Hello World!"
+  log_ls:
     runs-on: ubuntu-20.04
     steps:
-      -name: step1
-      run: |
-        ls -l;
+      - name: step1
+        run: |
+          ls -l;
