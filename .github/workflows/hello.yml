@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: log now
         run: |
-          date -r
+          date
   log_ls:
     runs-on: ubuntu-20.04
     steps:
