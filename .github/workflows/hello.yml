@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: log now
         run: |
-          echo "Hello World!"
+          date -r
   log_ls:
     runs-on: ubuntu-20.04
     steps:
