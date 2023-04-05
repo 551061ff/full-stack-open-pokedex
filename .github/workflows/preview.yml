@@ -23,3 +23,7 @@ jobs:
         run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Bump version and push tag
+      uses: anothrNick/github-tag-action@1.55.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GHUB_TOKEN }}
