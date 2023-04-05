@@ -30,3 +30,5 @@ jobs:
         uses: anothrNick/github-tag-action@1.55.0
         env:
           GITHUB_TOKEN: ${{ secrets.GHUB_TOKEN }}
+          WITH_V: true
+          DEFAULT_BUMP: patch
