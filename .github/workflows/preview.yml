@@ -5,8 +5,11 @@ env:
 on:
   workflow_dispatch:
   push:
-    branches-ignore:
-      - main
+    branches:
+      - master
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize]
 jobs:
   Deploy-Preview:
     runs-on: ubuntu-latest
